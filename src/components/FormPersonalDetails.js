@@ -10,13 +10,13 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
 
-function FormPersonalDetails({ nextstep,prevstep, values, setOccupation,setCity,setBio }) {
+function FormPersonalDetails({ nextstep, prevstep, values, setOccupation, setCity, setBio }) {
 
     const proceed = (e) => {
         e.preventDefault();
         nextstep();
     }
-    const back = (e)=>{
+    const back = (e) => {
         e.preventDefault();
         prevstep();
     }
@@ -67,7 +67,7 @@ function FormPersonalDetails({ nextstep,prevstep, values, setOccupation,setCity,
                 />
                 <br />
                 <Button
-                    primary={false}
+                    secondary={true}
                     variant="contained"
                     onClick={back}
                     style={styles.button}
