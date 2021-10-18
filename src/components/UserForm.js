@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Confirm from './Confirm';
 import FormPersonalDetails from './FormPersonalDetails';
 import FormUserDetails from "./FormUserDetails";
 function UserForm() {
@@ -41,9 +42,11 @@ function UserForm() {
                     setBio={setBio}
                 />
             case 3:
-                return (
-                    <h1>Confirm</h1>
-                )
+                return <Confirm
+                nextstep={nextstep}
+                prevstep={prevstep}
+                values={values}
+                />
             default:
                 return;
         }

@@ -8,7 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { formLabelClasses } from '@mui/material';
+
 
 function FormPersonalDetails({ nextstep,prevstep, values, setOccupation,setCity,setBio }) {
 
@@ -67,7 +67,7 @@ function FormPersonalDetails({ nextstep,prevstep, values, setOccupation,setCity,
                 />
                 <br />
                 <Button
-                    primary={formLabelClasses}
+                    primary={false}
                     variant="contained"
                     onClick={back}
                     style={styles.button}
